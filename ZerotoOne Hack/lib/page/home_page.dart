@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../page/information-square.dart';
-import '../page/personal-profile.dart';
+import 'information_square.dart';
+import 'personal_profile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => InformationSquare()),
+                  MaterialPageRoute(builder: (context) => const InformationSquare()),
                 );
               },
             ),
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => PersonalProfile()),
+                  MaterialPageRoute(builder: (context) => const PersonalProfile()),
                 );
               },
             ),
